@@ -12,6 +12,7 @@ node {
 	 stage('Deploy the code') {
 	    sh '''
 		ls -l
+		sudo cp /var/lib/jenkins/workspace/ant-scrptd/dist/AntExample.war /var/lib/tomcat8/webapps/
 		'''
 	}
 }	
