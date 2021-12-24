@@ -5,7 +5,7 @@ node {
 		  myant = tool 'Ant'
 	}
       stage('Build the code') {
-	     withEnv(['usrant=$myant']) {
+	     withEnv(["usrant=$myant"]) {
 		       sh "$usrant/bin/ant"
 		}
 	}
